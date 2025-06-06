@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barks and Bubbles Newsletter</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,900&display=swap");
+      #outlook a {
+        padding: 0;
+      }
+      body {
+        background-color: #fff6e8;
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        margin: 0;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+      a img {
+        border: none;
+      }
+      .image_fix {
+        display: block;
+      }
+      p {
+        margin: 1em 0;
+        font-size: 1em;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      p,
+      li {
+        line-height: 160%;
+      }
+
+      .title {
+        font-family: "Shrikhand", sans-serif;
+        font-size: 104px;
+        /* font-weight: 900; */
+        color: #fff6e8;
+        margin-left: 10px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+        line-height: 100px;
+        filter: drop-shadow(4px 3px 0px rgba(28, 2, 33, 0.4));
+      }
+      .subtitle {
+        font-family: "Shrikhand", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        color: #fff6e8;
+        margin-left: 10px;
+        margin-top: 8px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+        padding: 0;
+        filter: drop-shadow(4px 3px 0px rgba(28, 2, 33, 0.4));
+      }
+      .headertxt {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+      }
+      .sectiontitle {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 20px;
+      }
+      .sectiontxt {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+      }
+      #cta {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 12px;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px 30px;
+        border: none;
+        background-color: #77c2f3;
+        cursor: pointer;
+        border-radius: 8px;
+        z-index: 101;
+      }
+      #arrow {
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 2px;
+        z-index: 15;
+      }
+      table td {
+        border-collapse: collapse;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+      a {
+        color: #1c0221;
+        text-decoration: underline;
+      }
+      .wrapper {
+        /* width: 100%; */
+        max-width: 595px;
+        table-layout: fixed;
+        background-color: #fff6e8;
+        padding-bottom: 60px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        border: solid 1px #1c0221;
+      }
+      .main {
+        width: 100%;
+        max-width: 595px;
+        background-color: #ff9fa7;
+        font-size: 16px;
+        color: #1c0221;
+        text-align: left;
+      }
+      .two-columns {
+        padding: 0px 0 25px;
+        margin-top: 0px;
+        font-size: 0;
+        max-width: 300px;
+      }
+      .two-columns .column1 {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+      }
+      .two-columns .bottomgroupcol1 {
+        max-width: 300px;
+        margin-top: -20px;
+        display: inline-block;
+      }
+      .two-columns .bottomgroupcol2 {
+        max-width: 300px;
+        display: inline-block;
+        margin-top: -20px;
+      }
+      .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .two-columns .padding {
+        padding: 0 15px;
+      }
+      .two-columns .content {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      h3 {
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      @media (max-width: 490px) {
+        .image7 {
+          margin-top: -20px;
+        }
+        .image9 {
+          margin-top: -20px;
+        }
+        .title {
+          font-family: "Shrikhand", sans-serif;
+          font-size: 74px;
+          color: #fff6e8;
+          margin-left: 10px;
+          margin-top: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+          padding: 0;
+          line-height: 70px;
+          filter: drop-shadow(4px 3px 0px rgba(28, 2, 33, 0.4));
+        }
+        .subtitle {
+          font-family: "Shrikhand", sans-serif;
+          font-size: 28px;
+          font-weight: 900;
+          color: #fff6e8;
+          margin-left: 10px;
+          margin-top: 8px;
+          margin-right: 0;
+          margin-bottom: 0;
+          padding: 0;
+          padding: 0;
+          filter: drop-shadow(4px 3px 0px rgba(28, 2, 33, 0.4));
+        }
+      }
+      .theheader {
+        background-color: #ff9fa7;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .theheader h1 {
+        font-family: "Shrikhand", serif;
+        font-size: clamp(3rem /* 66px */, 6.5cqw, 6.5rem /* 104px */);
+        line-height: 3rem;
+        color: #fff6e8;
+        text-shadow: 4px 3px 0px rgba(28, 2, 33, 0.4);
+        margin-bottom: 1rem;
+      }
+
+      .theheader p {
+        font-family: "Nunito", sans-serif;
+        font-size: clamp(1.1rem /* 66px */, 1.5cqw, 1.5rem /* 104px */);
+        font-weight: 400;
+        color: #1c0221;
+        /* max-width: 600px; */
+      }
+      .theheader a {
+        color: #77c2f3;
+        text-decoration: underline;
+      }
+      .themaincontainer {
+        max-width: 1520px; /* 1440px + 80px gutters */
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+      .themaintitle {
+        padding-bottom: 2rem;
+      }
+      .links {
+        line-height: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="theheader">
+      <div class="themaincontainer">
+        <h1 class="themaintitle">Newsletter</h1>
+        <p class="links">
+          Check out the online ads <a href="http://tomotsugu.me">here</a>
+        </p>
+        <p class="links">
+          visit the site <a href="http://tomotsugu.me">here</a>
+        </p>
+      </div>
+    </header>
+    <center class="wrapper">
+      <table
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        class="main"
+        width="100%"
+      >
+        <table class="header">
+          <tr style="background-color: #ff9fa7">
+            <td>
+              <a href="#">
+                <img
+                  src="img/header.jpg"
+                  alt="barks and bubbles logo and name"
+                  style="max-width: 100%"
+              /></a>
+            </td>
+          </tr>
+
+          <tr style="background-color: #ff9fa7">
+            <td>
+              <table class="content">
+                <tr>
+                  <td style="padding: 16px 0px 10px 16px">
+                    <h1 class="title">Come for<br />the bath,</h1>
+                    <h2 class="subtitle">Stay for the belly rubs,</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p
+                      class="headertxt"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      Professional grooming care, all in one
+                      convenient&nbsp;place.<br />Located in beautiful Toronto,
+                      open 7 days a&nbsp;week.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <button id="cta" class="lgArt">
+                      Book Now&nbsp;<img
+                        src="img/arrow.svg"
+                        id="arrow"
+                        alt="an arrow"
+                      />
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table style="margin-bottom: 20px">
+                <a href="#">
+                  <img
+                    src="img/dog.jpg"
+                    class="rufusthedog"
+                    alt="image of rufus the dog"
+                    style="max-width: 100%"
+                /></a>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <tr>
+          <td>
+            <table style="margin-bottom: 20px">
+              <tr>
+                <p style="max-width: 400px">
+                  There’s no such thing as too many belly rubs… but there is
+                  such a thing as too many tangles! See what we have to offer
+                  you and your pet
+                </p>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr style="width: 100%">
+          <td style="width: 100%">
+            <table style="width: 100%; margin-bottom: 40px">
+              <tr style="width: 100%">
+                <td
+                  style="
+                    text-align: center;
+                    width: 50%;
+                    height: auto;
+                    vertical-align: top;
+                  "
+                >
+                  <a href="http://www.tomotosugu.me">
+                    <img
+                      src="img/private-grooming.jpg"
+                      alt="image of a person giving a dog a bath"
+                    />
+                  </a>
+                  <p class="sectiontitle">Private Grooming</p>
+                  <p class="sectiontxt" style="margin-top: -10px">
+                    Private grooming means your pup gets undivided attention,
+                    from nose to tail.
+                  </p>
+                  <a href="http://www.tomotosugu.me">Learn More</a>
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    width: 50%;
+                    height: auto;
+                    vertical-align: top;
+                  "
+                >
+                  <a href="http://www.tomotosugu.me">
+                    <img
+                      src="img/training-programs.jpg"
+                      alt="image of a person playing with dog on beach"
+                    />
+                  </a>
+                  <p class="sectiontitle">Training Programs</p>
+                  <p class="sectiontxt" style="margin-top: -10px">
+                    Our programs are designed for every pup, from distracted
+                    doodles to focused fetchers.
+                  </p>
+                  <a href="http://www.tomotosugu.me">Learn More</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr style="width: 100%">
+          <td style="width: 100%">
+            <table style="width: 100%; margin-bottom: 40px">
+              <tr style="width: 100%">
+                <td
+                  style="
+                    text-align: center;
+                    width: 50%;
+                    height: auto;
+                    vertical-align: top;
+                  "
+                >
+                  <a href="http://www.tomotosugu.me">
+                    <img
+                      src="img/walks.jpg"
+                      alt="image of a person walking a dog"
+                    />
+                  </a>
+                  <p class="sectiontitle">Outside Relief Walks</p>
+                  <p class="sectiontxt" style="margin-top: -10px">
+                    Every pup gets regular outside relief walks, because potty
+                    breaks should never be optional.
+                  </p>
+                  <a href="http://www.tomotosugu.me">Learn More</a>
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    width: 50%;
+                    height: auto;
+                    vertical-align: top;
+                  "
+                >
+                  <a href="http://www.tomotosugu.me">
+                    <img
+                      src="img/daycare.jpg"
+                      alt="image of two puppies playing"
+                    />
+                  </a>
+                  <p class="sectiontitle">Certified Daycare</p>
+                  <p class="sectiontxt" style="margin-top: -10px">
+                    Our certified dog daycare means your pup is in expert hands,
+                    all day, every day!
+                  </p>
+                  <a href="http://www.tomotosugu.me">Learn More</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <table class="content">
+              <tr>
+                <p
+                  class="sectiontitle"
+                  style="font-size: 24px; margin-bottom: 0px; max-width: 400px"
+                >
+                  Talk to our team today!
+                </p>
+                <button id="cta" style="margin-top: 10px">
+                  Book Now&nbsp;<img
+                    src="img/arrow.svg"
+                    id="arrow"
+                    alt="an arrow"
+                  />
+                </button>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <table style="margin-bottom: -40px">
+              <tr>
+                <p style="font-size: 12px; max-width: 400px">
+                  Copyright (c) 2025 Barks & Bubbles. All rights reserved. 817
+                  O'Connor Dr, Toronto, Ontario, M4B 2S7
+                </p>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 50%">
+                  <a
+                    href="http://www.tomotosugu.me"
+                    style="font-size: 12px; max-width: 400px"
+                    >Unsubscribe</a
+                  >
+                </td>
+                <td style="text-align: center; width: 50%">
+                  <a
+                    href="http://www.tomotosugu.me"
+                    style="font-size: 12px; max-width: 400px"
+                    >View In Browser</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
